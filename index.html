@@ -1,57 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Pro Website</title>
+    <title>গবেষণা পোর্টাল | Research Website</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PRO<span>DESIGN</span></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Research<span>Hub</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#home">হোম</a></li>
+            <li><a href="#about">সম্পর্কে</a></li>
+            <li><a href="#projects">গবেষণা</a></li>
+            <li><a href="#contact">যোগাযোগ</a></li>
         </ul>
-        <button class="contact-btn" onclick="sendEmail()">Email Me</button>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1 class="animate-text">Creativity Meets <span>Simplicity</span></h1>
-            <p>Welcome to my colorful world of professional blogging.</p>
-            <a href="#about" class="explore-btn">Get Started</a>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>ভবিষ্যতের প্রযুক্তি ও গবেষণা</h1>
+        <p>আমরা বিজ্ঞানের নতুন দিগন্ত উন্মোচনে কাজ করি।</p>
+        <a href="#projects" class="btn">আমাদের কাজ দেখুন</a>
+    </header>
 
+    <!-- About Section -->
     <section id="about" class="container">
-        <h2>About Me</h2>
-        <div class="underline"></div>
-        <p>আমি একজন প্রফেশনাল ওয়েব ডিজাইনার। আমি মডার্ন এবং কালারফুল ওয়েবসাইট তৈরি করতে পছন্দ করি।</p>
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>এটি একটি আধুনিক গবেষণা প্ল্যাটফর্ম যেখানে বিভিন্ন বিষয়ের ওপর গভীর বিশ্লেষণ ও তথ্য উপস্থাপন করা হয়। আমাদের লক্ষ্য হলো সঠিক তথ্যের মাধ্যমে সমাজকে এগিয়ে নেওয়া।</p>
     </section>
 
-    <section id="gallery" class="container">
-        <h2>My Gallery</h2>
-        <div class="underline"></div>
-        <div class="gallery-grid">
-            <div class="card c1">Nature</div>
-            <div class="card c2">Creative</div>
-            <div class="card c3">Vibrant</div>
+    <!-- Research Areas Section -->
+    <section id="projects" class="container bg-light">
+        <h2>গবেষণার ক্ষেত্রসমূহ</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>কৃত্রিম বুদ্ধিমত্তা</h3>
+                <p>AI এবং মেশিন লার্নিংয়ের মাধ্যমে ভবিষ্যৎ সমস্যা সমাধান।</p>
+            </div>
+            <div class="card">
+                <h3>পরিবেশ বিজ্ঞান</h3>
+                <p>জলবায়ু পরিবর্তন ও টেকসই উন্নয়নের ওপর গবেষণা।</p>
+            </div>
+            <div class="card">
+                <h3>ডেটা সায়েন্স</h3>
+                <p>বিগ ডেটা অ্যানালাইসিস এবং তথ্যের সঠিক ব্যবহার।</p>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>যোগাযোগ করুন</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="আপনার নাম" required>
+            <input type="email" placeholder="আপনার ইমেইল" required>
+            <textarea placeholder="আপনার বার্তা..."></textarea>
+            <button type="submit" class="btn">পাঠিয়ে দিন</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 ProDesign | Crafted with ❤️</p>
+        <p>&copy; ২০২৬ গবেষণা পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
